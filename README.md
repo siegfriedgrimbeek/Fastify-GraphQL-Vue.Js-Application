@@ -1,4 +1,4 @@
-# How to build a blazing fast GraphQL API with Node.js, MongoDB and Fastify!
+# Build a Full Stack MongoDB, Fastify, GraphQL and Vue.js application
 
 > A Node.js project
 
@@ -33,4 +33,4 @@ npm run serve
 
 ## Tutorial on Medium
 
-https://medium.freecodecamp.org/how-to-build-blazing-fast-rest-apis-with-node-js-mongodb-fastify-and-swagger-114e062db0c9
+Coming Soon!
