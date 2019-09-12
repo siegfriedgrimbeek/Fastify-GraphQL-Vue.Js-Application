@@ -1,23 +1,35 @@
+// Import External Dependancies
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
+// Import Router Views
+import Home from './views/Home.vue'
+import Car from './views/Car.vue'
+import Owner from './views/Owner.vue'
+
+// Initialize Vue Router
 Vue.use(Router)
 
+// Setup Routes
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
-  ]
+	mode: 'history',
+	routes: [
+		{
+			path: '/',
+			name: 'home',
+			component: Home
+		},
+		{
+			path: '/cars/:id',
+			name: 'car',
+			component: Car,
+			props: true
+		},
+		{
+			path: '/owner/:id',
+			name: 'owner',
+			component: Owner,
+			props: true
+		}
+	]
 })

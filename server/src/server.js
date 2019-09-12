@@ -3,6 +3,12 @@ const fastify = require('fastify')({
 	logger: true
 })
 
+// Enable the fastify CORS plugin
+fastify.register(require('fastify-cors'), {
+	origin: '*',
+	credentials: true
+})
+
 // Require external modules
 const mongoose = require('mongoose')
 
